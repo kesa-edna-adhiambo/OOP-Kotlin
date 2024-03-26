@@ -7,7 +7,7 @@ fun main() {
 
     person.speak("Edna")
 
-    person.birthday(20)
+    person.birthday()
 
     val me = User("Levin","Nelly","levinnelly@gmail.com","0711242173","ednaadhiambo")
 
@@ -20,8 +20,8 @@ fun main() {
 }
  class human(var name:String, var age:Int, var weight: Double){
      fun eat(foodWeight:Double){
-         println("Iam eating $foodWeight kgs of food")
          weight += foodWeight
+         println("Iam eating $foodWeight kgs of food")
      }
 
      fun speak(speech:String){
@@ -29,8 +29,9 @@ fun main() {
 
      }
 
-     fun birthday(age:Int){
-         println(age+1)
+     fun birthday(){
+         age += 1
+         println(age)
 
      }
 }
